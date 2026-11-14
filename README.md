@@ -1,0 +1,2 @@
+# kadai02_github
+Githubの課題で作成したオセロアプリのリポジトリ
