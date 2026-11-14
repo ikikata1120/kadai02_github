@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オセロ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        オセロでPCと対戦しよう！
+    </h1>
+
+    <!-- 現在の手番 -->
+    <p id="status">PCが考えています。</p>
+
+    <!-- メイン画面の表示エリア -->
+    <div class="game-area">
+
+        <!-- 左：プレイヤー情報 -->
+        <div class="player">
+            <h2>白（あなた）</h2>
+            <p>白の石：<span id="white-count">2</span>個</p>
+            <p><span id="white-win">0</span>勝
+               <span id="white-lose">0</span>敗</p>
+        </div>
+    
+        
+    <!-- 中央：オセロ盤 -->
+    <div id="board">
+     
+    </div>
+
+
+        <!-- 右：PC情報 -->
+        <div class="pc">
+            <h2>黒（PC）</h2>
+            <p>黒の石：<span id="black-count">2</span>個</p>
+            <p><span id="black-win">0</span>勝
+               <span id="black-lose">0</span>敗</p>
+        </div>
+    
+    </div>
+
+    <!-- リセットボタン -->
+    <button id="reset">最初から</button>
+
+    <!-- 累計成績のリセットボタン -->
+    <button id="reset-score">勝敗数をリセット</button>
+
+    <!-- スクリプトの読み込み -->
+    <script src="script.js"></script>
+
+</body>
+</html>

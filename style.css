@@ -1,0 +1,101 @@
+/* 画面全体 */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* タイトル */
+h1 {
+    margin-top: 40px;
+}
+
+/* いまの順番 */
+#status {
+    margin: 30px 0 20px;
+    font-size: 24px;
+}
+
+/* メイン画面の配置 */
+.game-area {
+    display: grid;
+    grid-template-columns: 160px 266px 160px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+/* 左右の情報設定 */
+.player,
+.pc {
+    width: 160px;
+    text-align: center;
+}
+
+/* プレイヤー情報をオセロ盤に寄せる */
+.player {
+    justify-self: end;
+}
+.pc {
+    justify-self: start;
+}
+
+
+
+/* オセロ盤　全体の設定 */
+#board {
+    display: grid;
+    grid-template-columns: repeat(4,64px);
+    grid-template-rows: repeat(4,64px);
+    gap: 2px;
+    padding: 2px;
+    background-color: black;
+}
+
+/* オセロ盤　各マスの設定 */
+.cell {
+    width: 64px;
+    height: 64px;
+    background-color:green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* オセロの石 */
+.stone {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+/* 白い石 */
+.white {
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* 黒い石 */
+.black {
+    background-color: black;
+}
+
+/* リセットボタン */
+#reset {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* 累計成績のリセットボタン */
+#reset-score {
+    display: block;
+    margin:10px auto;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
